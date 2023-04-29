@@ -3,7 +3,7 @@ fun main() {
     println(result)
 }
 
-fun calculateCommission(cardType: String = "МИР", pastTransfersAmount: Int = 0, transferAmount: Int = 15200) =
+fun calculateCommission(cardType: String = "МИР", pastTransfersAmount: Int = 0, transferAmount: Int = 1500): String =
     when (cardType) {
         "VkPAY" -> when {
             pastTransfersAmount + transferAmount > 40_000 -> "Превышен месячный лимит переводов"
@@ -25,5 +25,5 @@ fun calculateCommission(cardType: String = "МИР", pastTransfersAmount: Int = 
             else -> "Комиссия составит 35 рублей"
         }
 
-        else -> 0
+        else -> "Такой карты нет"
     }
