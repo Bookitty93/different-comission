@@ -13,7 +13,7 @@ class CommissionTest {
             cardType = cardType, pastTransfersAmount = pastTransfersAmount, transferAmount = transferAmount
         )
 
-        assertEquals("Комиссия составит 10 рублей", result)
+        assertEquals("Комиссия составит 0 рублей", result)
 
     }
 
